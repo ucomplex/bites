@@ -119,14 +119,14 @@ const Cart = () => {
 
           <ThemedView style={styles.emptyTitleView}>
             <ThemedText type="titleSmallSemiBold">
-              Your cart is empty
+              Ваша корзина пуста
             </ThemedText>
             <ThemedText
               type="bodySmall"
               lightColor={theme.gray500}
               darkColor={theme.gray500}
             >
-              You don't have any items in your cart yet.
+              У вас пока нет товаров в корзине.
             </ThemedText>
           </ThemedView>
 

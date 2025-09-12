@@ -31,8 +31,8 @@ const Welcome = () => {
             lightColor={theme.white}
             darkColor={theme.white}
           >
-            Fresh groceries,{"\n"}
-            Fast delivery
+            Свежие продукты,{"\n"}
+            Быстрая доставка
           </ThemedText>
 
           <ThemedText
@@ -40,13 +40,13 @@ const Welcome = () => {
             lightColor={theme.white}
             darkColor={theme.white}
           >
-            The easiest way to shop for fresh groceries, delivered right to your
-            door. Let’s get started!
+            Самый простой способ покупать свежие продукты с доставкой прямо к вашей
+            двери. Давайте начнем!
           </ThemedText>
         </ThemedView>
 
         <Button
-          title="Continue"
+          title="Продолжить"
           icon="arrow_right"
           onPress={() => {
             router.push("/sign-in");

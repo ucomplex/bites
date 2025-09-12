@@ -33,7 +33,7 @@ const ValidateCode = () => {
 
     setTimeout(() => {
       if (code.length < 6) {
-        setError("Please enter a valid code.");
+        setError("Пожалуйста, введите действительный код.");
       } else {
         setSuccess(true);
 
@@ -54,8 +54,8 @@ const ValidateCode = () => {
   return (
     <ThemedView safe style={styles.container}>
       <AuthHeader
-        title="Verification code"
-        description="Enter the 6-digit code we sent over SMS to (352) 023-3040."
+        title="Код подтверждения"
+        description="Введите 6-значный код, который мы отправили по SMS на (352) 023-3040."
       />
 
       <ThemedView style={styles.content}>
@@ -76,7 +76,7 @@ const ValidateCode = () => {
             }}
           />
 
-          <Button loading={loading} title="Confirm" onPress={handleConfirm} />
+          <Button loading={loading} title="Подтвердить" onPress={handleConfirm} />
 
           <Pressable>
             <ThemedText

@@ -45,13 +45,13 @@ const Home = ({
   const handleStorePress = (store: Store, title: string) => {
     let filteredProducts;
 
-    if (title === "Everyday Essentials") {
+    if (title === "Повседневные товары") {
       filteredProducts = products.filter(
         (product) =>
           product.store_id === store.id ||
           (product.store_id !== store.id && product.featured),
       );
-    } else if (title === "Fruits & Vegetables") {
+    } else if (title === "Овощи и фрукты") {
       filteredProducts = products.filter(
         (product) => product.store_id === store.id,
       );
@@ -86,7 +86,7 @@ const Home = ({
               lightColor={theme.gray500}
               darkColor={theme.gray500}
             >
-              Stores near you
+              Магазины рядом с вами
             </ThemedText>
 
             <Pressable>
@@ -95,7 +95,7 @@ const Home = ({
                 lightColor={theme.success600}
                 darkColor={theme.success600}
               >
-                View all
+                Смотреть все
               </ThemedText>
             </Pressable>
           </ThemedView>
@@ -127,7 +127,7 @@ const Home = ({
 
         <ThemedView style={styles.categoriesView}>
           <ThemedText type="titleSmallSemiBold" style={styles.title}>
-            Shop by category
+            Покупки по категориям
           </ThemedText>
 
           <ScrollView
@@ -162,12 +162,12 @@ const Home = ({
         >
           {imperioFresh && (
             <StoreRow
-              title="Everyday Essentials"
+              title="Повседневные товары"
               titleType="titleSmallSemiBold"
-              subtitle="From Imperio Fresh"
+              subtitle="От Империо Фреш"
               store={imperioFresh}
               onPress={() => {
-                handleStorePress(imperioFresh, "Everyday Essentials");
+                handleStorePress(imperioFresh, "Повседневные товары");
               }}
               style={styles.storeRow}
             />
@@ -200,12 +200,12 @@ const Home = ({
         >
           {liceriaFruitSalad && (
             <StoreRow
-              title="Fruits & Vegetables"
+              title="Овощи и фрукты"
               titleType="titleSmallSemiBold"
-              subtitle="From Liceria Fruit Salad"
+              subtitle="От Фруктовый салат"
               store={liceriaFruitSalad}
               onPress={() => {
-                handleStorePress(liceriaFruitSalad, "Fruits & Vegetables");
+                handleStorePress(liceriaFruitSalad, "Овощи и фрукты");
               }}
               style={styles.storeRow}
             />
@@ -225,7 +225,7 @@ const Home = ({
         </ThemedView>
 
         <ThemedView style={styles.storesRowsView}>
-          <ThemedText type="titleSmallSemiBold">Stores near you</ThemedText>
+          <ThemedText type="titleSmallSemiBold">Магазины рядом с вами</ThemedText>
 
           {stores.map((store, index) => (
             <StoreRow

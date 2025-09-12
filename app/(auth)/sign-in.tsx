@@ -30,7 +30,7 @@ const SignIn = () => {
 
     setTimeout(() => {
       if (phoneNumber.length < 10) {
-        setError("Please enter a valid phone number.");
+        setError("Пожалуйста, введите действительный номер телефона.");
       } else {
         router.push({
           pathname: "/validate-code",

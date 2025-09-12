@@ -17,19 +17,19 @@ const cards = [
   {
     id: 1,
     icon: "receipt_bill",
-    title: "Orders",
+    title: "Заказы",
     route: "/orders",
   },
   {
     id: 2,
     icon: "heart",
-    title: "Favorites",
+    title: "Избранное",
     route: "/(root)/favorites",
   },
   {
     id: 3,
     icon: "headphone",
-    title: "Help",
+    title: "Помощь",
     route: "/profile",
   },
 ];
@@ -38,13 +38,13 @@ const routes = [
   {
     id: 1,
     icon: "user",
-    title: "Personal information",
+    title: "Личная информация",
     route: "/(root)/personal-information",
   },
   {
     id: 2,
     icon: "location",
-    title: "Addresses",
+    title: "Адреса",
     route: "/(root)/edit-address",
   },
   {

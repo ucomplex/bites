@@ -19,7 +19,7 @@ export default function Layout() {
       <Tabs.Screen
         name="home"
         options={{
-          title: "Home",
+          title: "Главная",
           headerShown: false,
           tabBarIcon: ({ color }) => (
             <Icon name="home" color={color} size={24} />
@@ -29,7 +29,7 @@ export default function Layout() {
       <Tabs.Screen
         name="orders"
         options={{
-          title: "Orders",
+          title: "Заказы",
           headerShown: false,
           tabBarIcon: ({ color }) => (
             <Icon name="receipt_bill" color={color} size={24} />
@@ -39,7 +39,7 @@ export default function Layout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: "Profile",
+          title: "Профиль",
           headerShown: false,
           tabBarIcon: ({ color }) => (
             <Icon name="user" color={color} size={24} />

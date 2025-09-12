@@ -45,7 +45,7 @@ const Orders = () => {
         },
       ]}
     >
-      <SingleHeader title="Orders" />
+      <SingleHeader title="Заказы" />
 
       <ScrollView contentContainerStyle={styles.content}>
         <ThemedView>

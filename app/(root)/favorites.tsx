@@ -21,11 +21,11 @@ const Favorites = () => {
         },
       ]}
     >
-      <TitleHeader title="Favorites" />
+      <TitleHeader title="Избранное" />
       <ScrollView contentContainerStyle={styles.content}>
         {favorites.length === 0 && (
           <ThemedText type="heading" style={styles.title}>
-            No favorites yet
+            Пока нет избранного
           </ThemedText>
         )}
 
