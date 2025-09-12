@@ -29,7 +29,7 @@ const AllowNotifications = () => {
 
   return (
     <ThemedView safe style={styles.container}>
-      <AuthHeader title="Allow notifications" />
+      <AuthHeader title="Разрешить уведомления" />
       <Banner />
 
       <ThemedView style={styles.content}>
@@ -37,13 +37,13 @@ const AllowNotifications = () => {
           <Icon name="car" size={24} color={theme.icon} />
 
           <ThemedView style={styles.cardText}>
-            <ThemedText type="heading">Order Status</ThemedText>
+            <ThemedText type="heading">Статус заказа</ThemedText>
             <ThemedText
               type="footnote"
               lightColor={theme.gray500}
               darkColor={theme.gray500}
             >
-              Receive status alerts about your latest order activity.
+              Получайте уведомления о статусе ваших последних заказов.
             </ThemedText>
           </ThemedView>
         </ThemedView>

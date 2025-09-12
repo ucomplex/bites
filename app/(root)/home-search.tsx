@@ -9,7 +9,7 @@ import StoreRow from "@/components/StoreRow";
 import SearchProduct from "@/components/SearchProduct";
 import SearchHeader from "@/components/navigation/SearchHeader";
 
-const top_searches = ["milk", "eggs", "yogurt", "bananas"];
+const top_searches = ["молоко", "яйца", "йогурт", "бананы"];
 
 const HomeSearch = ({ stores = mock.stores, products = mock.products }) => {
   const [searchQuery, setSearchQuery] = React.useState("");

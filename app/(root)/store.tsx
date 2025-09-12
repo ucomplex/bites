@@ -40,15 +40,15 @@ const Store = ({ products = mock.products }) => {
   );
 
   const bestSellers = filteredProducts.filter((product) =>
-    product.categories.includes("Best Sellers"),
+    product.categories.includes("Хиты продаж"),
   );
 
   const fruitsAndVeggies = products.filter((product) =>
-    product.categories.includes("Fruits & Vegetables"),
+    product.categories.includes("Овощи и фрукты"),
   );
 
   const seafoodAndPlantBased = products.filter((product) =>
-    product.categories.includes("Seafood & Plant-Based"),
+    product.categories.includes("Морепродукты и растительные"),
   );
 
   const dairyAndEggs = products.filter((product) =>

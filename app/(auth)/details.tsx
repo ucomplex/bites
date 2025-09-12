@@ -26,11 +26,11 @@ const Details = () => {
 
   const handleContinue = () => {
     if (!firstName) {
-      setFirstNameError("First name is required.");
+      setFirstNameError("Имя обязательно.");
     }
 
     if (!lastName) {
-      setLastNameError("Last name is required.");
+      setLastNameError("Фамилия обязательна.");
     }
 
     if (firstName && lastName) {
@@ -48,11 +48,11 @@ const Details = () => {
 
   return (
     <ThemedView safe style={styles.container}>
-      <AuthHeader title="Enter your name" />
+      <AuthHeader title="Введите ваше имя" />
 
       <ThemedView style={styles.content}>
         <TextField
-          placeholder="First name"
+          placeholder="Имя"
           value={firstName}
           onChangeText={(text) => {
             setFirstName(text);
@@ -71,7 +71,7 @@ const Details = () => {
           </ThemedText>
         ) : null}
         <TextField
-          placeholder="Last name"
+          placeholder="Фамилия"
           value={lastName}
           onChangeText={(text) => {
             setLastName(text);
@@ -88,7 +88,7 @@ const Details = () => {
             {lastNameError}
           </ThemedText>
         ) : null}
-        <Button loading={loading} title="Continue" onPress={handleContinue} />
+        <Button loading={loading} title="Продолжить" onPress={handleContinue} />
       </ThemedView>
     </ThemedView>
   );

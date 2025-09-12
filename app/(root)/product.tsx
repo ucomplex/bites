@@ -258,7 +258,7 @@ const Product = ({ products = mock.products }) => {
         </ThemedView>
         <Button
           loading={loading}
-          title="Add to cart"
+          title="Добавить в корзину"
           onPress={handleAddToCart}
           style={styles.button}
         />

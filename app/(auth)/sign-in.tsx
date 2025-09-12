@@ -49,14 +49,14 @@ const SignIn = () => {
       style={styles.container}
     >
       <ThemedView safe style={styles.container}>
-        <AuthHeader title="Enter your phone number" />
+        <AuthHeader title="Введите номер телефона" />
 
         <ThemedView style={styles.content}>
           <ThemedView style={styles.fields}>
             <ThemedView style={styles.textField}>
               <TextField
                 icon="call_phone"
-                placeholder="Enter phone number"
+                placeholder="Введите номер телефона"
                 value={phoneNumber}
                 onChangeText={setPhoneNumber}
                 keyboardType="phone-pad"
@@ -75,7 +75,7 @@ const SignIn = () => {
               ) : null}
             </ThemedView>
 
-            <Button loading={loading} title="Continue" onPress={handleLogin} />
+            <Button loading={loading} title="Продолжить" onPress={handleLogin} />
           </ThemedView>
 
           <ThemedView style={styles.separator}>
@@ -92,7 +92,7 @@ const SignIn = () => {
               lightColor={theme.gray500}
               darkColor={theme.gray500}
             >
-              or
+              или
             </ThemedText>
             <ThemedView
               style={[

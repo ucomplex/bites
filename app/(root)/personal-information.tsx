@@ -10,25 +10,25 @@ const routes = [
   {
     id: 1,
     title: "capricorn.engineering@outlook.com",
-    subtitle: "Email",
+    subtitle: "Электронная почта",
     route: "/edit-email",
   },
   {
     id: 2,
     title: "Jose A. Vazquez",
-    subtitle: "Name",
+    subtitle: "Имя",
     route: "/edit-name",
   },
   {
     id: 3,
     title: "+ (352) 933-3903",
-    subtitle: "Phone number",
+    subtitle: "Номер телефона",
     route: "/edit-phone",
   },
   {
     id: 4,
     title: "********",
-    subtitle: "Password",
+    subtitle: "Пароль",
     route: "/change-password",
   },
 ];

@@ -40,7 +40,7 @@ const EditAddress = () => {
         },
       ]}
     >
-      <ModalHeader title="Edit Address" />
+      <ModalHeader title="Редактировать адрес" />
       <ScrollView contentContainerStyle={styles.content}>
         <SearchAddressBar autoFocus={false} />
 

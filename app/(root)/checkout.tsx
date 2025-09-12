@@ -31,22 +31,22 @@ type DeliveryTimeOptionProps = {
 const delivery_times: DeliveryTimeOptionProps[] = [
   {
     icon: "circle_clock",
-    label: "Standard",
-    duration: "20-40 min",
+    label: "Стандартная",
+    duration: "20-40 мин",
     price: "$5.99",
     navigation: false,
   },
   {
     icon: "bolt",
-    label: "Express",
-    duration: "10-20 min",
+    label: "Экспресс",
+    duration: "10-20 мин",
     price: "$9.99",
     navigation: false,
   },
   {
     icon: "calendar",
-    label: "Later",
-    duration: "Pick a time",
+    label: "Позже",
+    duration: "Выберите время",
     price: "$12.99",
     navigation: true,
   },
