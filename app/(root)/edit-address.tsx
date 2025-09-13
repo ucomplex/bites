@@ -65,7 +65,7 @@ const EditAddress = () => {
 
         <ThemedView style={styles.textFields}>
           <TextField
-            placeholder="Enter your address"
+            placeholder="Введите ваш адрес"
             value={address}
             onChangeText={setAddress}
           />

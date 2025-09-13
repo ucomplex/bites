@@ -6,7 +6,7 @@ import { useColorScheme, StyleSheet, ScrollView, Switch } from "react-native";
 
 const notifications = [
   {
-    title: "Order Updates",
+    title: "Обновления заказа",
     items: [
       {
         id: "push",

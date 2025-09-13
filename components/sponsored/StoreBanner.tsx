@@ -54,7 +54,7 @@ const StoreBanner = () => {
             lightColor={theme.white}
             darkColor={theme.white}
           >
-            Order Now
+            Заказать сейчас
           </ThemedText>
         </Pressable>
       </ThemedView>

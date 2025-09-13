@@ -28,21 +28,21 @@ const ShareLocation = () => {
 
   return (
     <ThemedView safe style={styles.container}>
-      <AuthHeader title="Share Location" />
+      <AuthHeader title="Поделиться местоположением" />
 
       <ThemedView style={styles.content}>
         <ThemedView style={styles.card}>
           <Icon name="location" size={24} color={theme.icon} />
 
           <ThemedView style={styles.cardText}>
-            <ThemedText type="heading">Find stores near you</ThemedText>
+            <ThemedText type="heading">Найти магазины рядом с вами</ThemedText>
             <ThemedText
               type="footnote"
               lightColor={theme.gray500}
               darkColor={theme.gray500}
             >
-              See all the stores you can order from by sharing your location or
-              entering a specific address.
+              Посмотрите все магазины, из которых вы можете заказать, поделившись своим местоположением или
+              введя конкретный адрес.
             </ThemedText>
           </ThemedView>
         </ThemedView>
@@ -50,11 +50,11 @@ const ShareLocation = () => {
         <ThemedView style={styles.btns}>
           <Button
             loading={loading}
-            title="Share location"
+            title="Поделиться местоположением"
             onPress={handleShareLocation}
           />
           <GhostButton
-            title="Enter your address"
+            title="Введите ваш адрес"
             onPress={() => {
               router.push("/enter-address");
             }}

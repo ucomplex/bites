@@ -20,7 +20,7 @@ const EnterAddress = () => {
         },
       ]}
     >
-      <ModalHeader title="Enter Address" />
+      <ModalHeader title="Введите адрес" />
 
       <ThemedView style={styles.content}>
         <SearchAddressBar />

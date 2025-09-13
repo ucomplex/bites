@@ -34,7 +34,7 @@ const HomeHeader = ({}: HomeHeaderProps) => {
             lightColor={theme.gray500}
             darkColor={theme.gray500}
           >
-            Delivery address
+            Адрес доставки
           </ThemedText>
           <Pressable
             style={styles.addressButton}
@@ -51,7 +51,7 @@ const HomeHeader = ({}: HomeHeaderProps) => {
       </ThemedView>
 
       <SearchBar
-        placeholder="Search for products..."
+        placeholder="Поиск товаров..."
         onFocus={() => {
           if (!navigated) {
             setNavigated(true);

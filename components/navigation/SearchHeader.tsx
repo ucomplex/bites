@@ -39,7 +39,7 @@ const SearchHeader = ({
       </Pressable>
 
       <SearchBar
-        placeholder="Search for products..."
+        placeholder="Поиск товаров..."
         value={searchQuery}
         onChangeText={(text) => setSearchQuery(text)}
         autoFocus

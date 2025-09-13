@@ -22,14 +22,14 @@ const Tabs = ({ activeTab, setActiveTab }: TabsProps) => {
       ]}
     >
       <Tab
-        title="Information"
+        title="Информация"
         activeTab={activeTab}
         tabKey="information"
         onPress={() => setActiveTab("information")}
       />
 
       <Tab
-        title="Delivery times"
+        title="Время доставки"
         activeTab={activeTab}
         tabKey="delivery-times"
         onPress={() => setActiveTab("delivery-times")}

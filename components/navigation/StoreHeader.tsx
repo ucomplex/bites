@@ -64,7 +64,7 @@ const StoreHeader = ({
       </ThemedView>
       <ThemedView style={styles.searchView}>
         <SearchBar
-          placeholder="Search for products..."
+          placeholder="Поиск товаров..."
           onFocus={() => {
             if (!navigated) {
               setNavigated(true);

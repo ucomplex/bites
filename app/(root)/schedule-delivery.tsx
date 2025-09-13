@@ -83,7 +83,7 @@ const ScheduleDelivery = () => {
         },
       ]}
     >
-      <ModalHeader title="Schedule Delivery" />
+      <ModalHeader title="Запланировать доставку" />
 
       <ScrollView contentContainerStyle={styles.content}>
         <ScrollView

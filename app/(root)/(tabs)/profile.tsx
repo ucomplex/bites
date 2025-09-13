@@ -50,19 +50,19 @@ const routes = [
   {
     id: 3,
     icon: "bank_card",
-    title: "Payment method",
+    title: "Способ оплаты",
     route: "/(root)/payment-method",
   },
   {
     id: 4,
     icon: "bell",
-    title: "Notifications",
+    title: "Уведомления",
     route: "/(root)/notifications",
   },
   {
     id: 5,
     icon: "info_circle_stroke",
-    title: "About",
+    title: "О приложении",
     route: "/(root)/about",
   },
 ];
@@ -87,13 +87,13 @@ const Profile = () => {
       <ScrollView contentContainerStyle={styles.content}>
         <ThemedView style={styles.profileNameView}>
           <ThemedView style={styles.profileName}>
-            <ThemedText type="titleSmallSemiBold">Jose A. Vazquez</ThemedText>
+            <ThemedText type="titleSmallSemiBold">Зелимхан Гакаев</ThemedText>
             <ThemedText
               type="footnote"
               lightColor={theme.gray500}
               darkColor={theme.gray500}
             >
-              1 order • 1 hour saved
+              1 заказ • 1 час сохранено
             </ThemedText>
           </ThemedView>
 
@@ -145,7 +145,7 @@ const Profile = () => {
           ))}
         </ThemedView>
 
-        <Button type="secondary" title="Sign Out" style={styles.button} />
+        <Button type="secondary" title="Выйти" style={styles.button} />
       </ScrollView>
     </ThemedView>
   );

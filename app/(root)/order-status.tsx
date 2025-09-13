@@ -12,19 +12,19 @@ import OrderSteps from "@/components/OrderSteps";
 const steps = [
   {
     icon: "checkmark",
-    title: "Received",
+    title: "Получен",
   },
   {
     icon: "shopping_basket",
-    title: "Shopping",
+    title: "Покупка",
   },
   {
     icon: "car",
-    title: "In Transit",
+    title: "В пути",
   },
   {
     icon: "home",
-    title: "Delivered",
+    title: "Доставлен",
   },
 ];
 
@@ -84,7 +84,7 @@ const OrderStatus = () => {
                   lightColor={theme.white}
                   darkColor={theme.white}
                 >
-                  ARRIVING BETWEEN
+                  ОЖИДАЕМОЕ ВРЕМЯ ДОСТАВКИ
                 </ThemedText>
                 <ThemedText
                   type="title"
@@ -101,7 +101,7 @@ const OrderStatus = () => {
                   lightColor={theme.white}
                   darkColor={theme.white}
                 >
-                  ORDER #: 30439 • 2 ITEMS • $20.39
+                  ЗАКАЗ #: 30439 • 2 ТОВАРА • $20.39
                 </ThemedText>
               </ThemedView>
             </ThemedView>
@@ -120,15 +120,15 @@ const OrderStatus = () => {
                 type="titleSmallBold"
                 style={styles.orderDetailsTitle}
               >
-                YOUR ORDER{"\n"}
-                HAS BEEN RECEIVED!
+                ВАШ ЗАКАЗ
+                ПОЛУЧЕН!
               </ThemedText>
               <ThemedText
                 type="footnote"
                 lightColor={theme.gray500}
                 darkColor={theme.gray500}
               >
-                We've sent a confirmation email to{"\n"}
+                Мы отправили письмо с подтверждением на{"\n"}
                 capricorn.engineering@outlook.com.
               </ThemedText>
             </ThemedView>
@@ -138,13 +138,13 @@ const OrderStatus = () => {
             <ThemedView style={styles.orderDetailsAgreementView}>
               <ThemedView style={[styles.buttonRow]}>
                 <Button
-                  title="View Map"
+                  title="Карта"
                   onPress={() => {}}
                   style={styles.button}
                 />
                 <Button
                   type="secondary"
-                  title="Need Help?"
+                  title="Нужна помощь?"
                   onPress={() => {}}
                   style={styles.button}
                 />
@@ -155,15 +155,15 @@ const OrderStatus = () => {
                 darkColor={theme.gray500}
                 style={styles.orderDetailsAgreementText}
               >
-                By clicking "View Map" you will be directed to a third-party
-                where you can your order status.
+                Нажав "Карта", вы будете перенаправлены на сторонний
+                сервис, где вы можете отслеживать статус вашего заказа
               </ThemedText>
             </ThemedView>
           </ThemedView>
 
           <ThemedView style={styles.orderDetailsLockScreenView}>
             <ThemedText type="callout">
-              Follow my order on lock screen.
+              Отслеживать мой заказ
             </ThemedText>
 
             <Switch
@@ -199,7 +199,7 @@ const OrderStatus = () => {
               lightColor={theme.purple600}
               darkColor={theme.purple600}
             >
-              TRACKING INFORMATION
+              ИНФОРМАЦИЯ ОТСЛЕЖИВАНИЯ
             </ThemedText>
           </ThemedView>
 
@@ -215,7 +215,7 @@ const OrderStatus = () => {
             <ThemedView style={styles.trackingInformationDetailsRow}>
               <Icon name="store" size={24} color={theme.icon} />
               <ThemedView style={[styles.trackingInformationDetailsTitleView]}>
-                <ThemedText type="callout">Delivering From</ThemedText>
+                <ThemedText type="callout">Доставка из</ThemedText>
                 <ThemedText
                   type="calloutSmall"
                   lightColor={theme.gray500}
@@ -231,7 +231,7 @@ const OrderStatus = () => {
             <ThemedView style={styles.trackingInformationDetailsRow}>
               <Icon name="location" size={24} color={theme.icon} />
               <ThemedView style={[styles.trackingInformationDetailsTitleView]}>
-                <ThemedText type="callout">Delivering To</ThemedText>
+                <ThemedText type="callout">Доставка по адресу</ThemedText>
                 <ThemedText
                   type="calloutSmall"
                   lightColor={theme.gray500}

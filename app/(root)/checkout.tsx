@@ -118,9 +118,9 @@ const Checkout = () => {
             <CheckoutRow
               type="modal"
               icon="car"
-              title="Delivery instructions"
+              title="Инструкции по доставке"
               subtitle={
-                instructions ? instructions : "Add delivery instructions"
+                instructions ? instructions : "Добавить инструкции по доставке"
               }
               onPress={() => {
                 setMenuVisible(true);
@@ -129,7 +129,7 @@ const Checkout = () => {
           </ThemedView>
 
           <ThemedView style={[styles.deliveryTimesView]}>
-            <ThemedText type="callout">Delivery time</ThemedText>
+            <ThemedText type="callout">Время доставки</ThemedText>
 
             {delivery_times.map((time) => (
               <DeliveryTimeRow
@@ -172,7 +172,7 @@ const Checkout = () => {
             },
           ]}
         >
-          <ThemedText type="callout">Order summary</ThemedText>
+          <ThemedText type="callout">Сводка заказа</ThemedText>
 
           <ThemedView style={styles.summary}>
             <ThemedView style={styles.summaryRows}>
@@ -193,7 +193,7 @@ const Checkout = () => {
                   lightColor={theme.gray500}
                   darkColor={theme.gray500}
                 >
-                  Delivery fee
+                  Стоимость доставки
                 </ThemedText>
                 <ThemedText type="callout">$4.99</ThemedText>
               </ThemedView>

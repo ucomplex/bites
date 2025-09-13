@@ -91,13 +91,13 @@ const Store = ({ products = mock.products }) => {
           store: JSON.stringify(parsedStore),
         },
       });
-    } else if (item.title === "Share") {
+    } else if (item.title === "Поделиться") {
       handleShare();
-    } else if (item.title === "Add to favorites") {
+    } else if (item.title === "Добавить в избранное") {
       if (isFavorite(parsedStore.id)) {
         removeFavorite(parsedStore.id);
 
-        toast.success("Removed from favorites", {
+        toast.success("Удалено из избранного", {
           position: ToastPosition.TOP,
           duration: 2500,
         });
@@ -106,7 +106,7 @@ const Store = ({ products = mock.products }) => {
       } else {
         addFavorite(parsedStore);
 
-        toast.success("Added to favorites ✨", {
+        toast.success("Добавлено в избранное ✨", {
           position: ToastPosition.TOP,
           duration: 2500,
         });

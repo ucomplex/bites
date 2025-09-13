@@ -22,7 +22,7 @@ const SearchAddressBar = ({ autoFocus }: SearchAddressBarProps) => {
         },
       ]}
     >
-      <TextField placeholder="Enter Address" autoFocus={autoFocus} search />
+      <TextField placeholder="Введите адрес" autoFocus={autoFocus} search />
     </ThemedView>
   );
 };

@@ -69,7 +69,7 @@ const StoreInfo = () => {
                 },
               ]}
             >
-              <ThemedText type="callout">About</ThemedText>
+              <ThemedText type="callout">О магазине</ThemedText>
               <ThemedView style={styles.descriptionRow}>
                 <Icon name="info_circle" size={24} color={theme.icon} />
 
@@ -96,7 +96,7 @@ const StoreInfo = () => {
                     lightColor={theme.gray500}
                     darkColor={theme.gray500}
                   >
-                    Delivery
+                    Доставка
                   </ThemedText>
                 </ThemedView>
               </ThemedView>
@@ -119,7 +119,7 @@ const StoreInfo = () => {
                   lightColor={theme.gray500}
                   darkColor={theme.gray500}
                 >
-                  NEXT DELIVERY TIME
+                  СЛЕДУЮЩЕЕ ВРЕМЯ ДОСТАВКИ
                 </ThemedText>
 
                 <ThemedText type="titleSemiBold">Within 2 hours</ThemedText>
@@ -134,7 +134,7 @@ const StoreInfo = () => {
                   lightColor={theme.success600}
                   darkColor={theme.success600}
                 >
-                  All delivery times
+                  Время доставки
                 </ThemedText>
                 <Icon name="chevron_right" size={16} color={theme.success600} />
               </Pressable>

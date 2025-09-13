@@ -83,13 +83,13 @@ const HomeSearch = ({ stores = mock.stores, products = mock.products }) => {
         {!hasResults && (
           <ThemedView style={styles.suggestions}>
             <ThemedText type="heading" style={styles.title}>
-              Recent search
+              Недавний поиск
             </ThemedText>
             <ThemedView>
               <SuggestionSearchRow item="milk" icon />
             </ThemedView>
             <ThemedText type="heading" style={styles.title}>
-              Top searches
+              Популярные запросы
             </ThemedText>
             <ThemedView>
               {top_searches.map((item, index) => (

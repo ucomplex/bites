@@ -78,7 +78,7 @@ const StoreSearch = ({ products = mock.products }) => {
       {searchQuery.length === 0 && (
         <ThemedView style={styles.recommendations}>
           <ThemedText type="heading" style={styles.title}>
-            Recommended searches
+            Рекомендуемые запросы
           </ThemedText>
           <ThemedView>
             {recommendations.map((item, index) => (

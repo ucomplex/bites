@@ -56,7 +56,7 @@ const SpecialBanner = () => {
               lightColor={theme.white}
               darkColor={theme.white}
             >
-              View More
+              Подробнее
             </ThemedText>
           </Pressable>
         </ThemedView>

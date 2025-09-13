@@ -52,7 +52,7 @@ const InstructionsMenu = ({
           <TextArea
             value={tempInstructions}
             onChange={(text) => setTempInstructions(text)}
-            label="Add delivery instructions"
+            label="Добавить инструкции по доставке"
             placeholder="Add access code, best entrance, etc."
           />
 

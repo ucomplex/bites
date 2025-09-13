@@ -48,7 +48,7 @@ const PersonalInformation = () => {
         },
       ]}
     >
-      <TitleHeader title="Personal Information" />
+      <TitleHeader title="Личная информация" />
       <ThemedView style={styles.content}>
         <ThemedView>
           {routes.map((route, index) => (

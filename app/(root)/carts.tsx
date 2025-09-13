@@ -48,11 +48,11 @@ const Carts = ({ stores = mock.stores }) => {
         },
       ]}
     >
-      <ModalHeader title="Carts" />
+      <ModalHeader title="Корзина" />
 
       <ScrollView contentContainerStyle={styles.content}>
         {carts.length === 0 ? (
-          <ThemedText type="heading">No carts available</ThemedText>
+          <ThemedText type="heading">Нет товаров в корзине</ThemedText>
         ) : (
           carts.map((cart) => {
             if (cart.items && cart.items.length > 0) {

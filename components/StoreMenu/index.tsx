@@ -7,17 +7,17 @@ import { Colors } from "@/constants/Colors";
 const menu_items = [
   {
     id: 1,
-    title: "Add to favorites",
+    title: "Добавить в избранное",
     icon: "heart",
   },
   {
     id: 2,
-    title: "Share",
+    title: "Поделиться",
     icon: "share",
   },
   {
     id: 3,
-    title: "Store info",
+    title: "Информация о магазине",
     icon: "info_circle_stroke",
     route: "/store-info",
   },
@@ -60,7 +60,7 @@ const StoreMenu = ({
         >
           <Icon
             name={
-              item.title === "Add to favorites" && isFavorite(parsedStore.id)
+              item.title === "Добавить в избранное" && isFavorite(parsedStore.id)
                 ? "heart_filled"
                 : item.icon
             }
@@ -68,8 +68,8 @@ const StoreMenu = ({
             color={theme.icon}
           />
           <ThemedText type="callout">
-            {item.title === "Add to favorites" && isFavorite(parsedStore.id)
-              ? "Remove from favorites"
+            {item.title === "Добавить в избранное" && isFavorite(parsedStore.id)
+              ? "Удалить из избранного"
               : item.title}
           </ThemedText>
         </Pressable>

@@ -15,7 +15,7 @@ import {
 const routes = [
   {
     id: 1,
-    title: "About",
+    title: "О приложении",
     route: "/legal",
   },
   {
@@ -45,7 +45,7 @@ const About = () => {
         },
       ]}
     >
-      <TitleHeader title="About" />
+      <TitleHeader title="О приложении" />
       <ScrollView>
         {routes.map((route, index) => (
           <Pressable

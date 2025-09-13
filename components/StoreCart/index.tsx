@@ -45,7 +45,7 @@ const StoreCart = ({
             lightColor={theme.gray500}
             darkColor={theme.gray500}
           >
-            {totalItems} item{totalItems !== 1 ? "s" : ""} • MX $
+            {totalItems} товар{totalItems !== 1 ? (totalItems < 5 ? "а" : "ов") : ""} • MX $
             {totalPrice.toFixed(2)}
           </ThemedText>
         </ThemedView>
